@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Club de Fans del Barcelona FC</title>
+  <style>
+    /* Estilos CSS para la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("fondo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .header {
+      background-color: #1a237e;
+      padding: 20px;
+      text-align: center;
+      color: #fff; /* Cambio de color a blanco */
+    }
+    
+    .content {
+      margin: 20px;
+      text-align: center;
+      color: #fff; /* Cambio de color a blanco */
+    }
+    
+    .content h2,
+    .content label {
+      background-color: #666;
+      color: #fff; /* Cambio de color a blanco */
+      padding: 10px;
+      border-radius: 4px;
+    }
+    
+    .cta-button {
+      background-color: #FFDD00;
+      color: #000000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    .cta-button:hover {
+      background-color: #0d47a1;
+    }
+    
+    .footer {
+      background-color: #1a237e;
+      padding: 10px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 14px;
+    }
+    nav {
+      background-color: #A50044;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #A50044;
+    }
+
+    nav a b {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="/Landing/landing.html"><b>Principal</b></a>
+      </nav>
+  <div class="header">
+    <h1>¡Bienvenido al Club de Fans del Barcelona FC!</h1>
+  </div>
+  
+  <div class="content">
+    <h2>Únete a nuestra comunidad apasionada por el Barcelona FC</h2>   
+    <!-- Formulario -->
+    <form action="/procesar-formulario" method="POST">
+      <label for="nombreApellido">Nombre y Apellido:</label><br>
+      <input type="text" id="nombreApellido" name="nombreApellido" required><br><br>
+      
+      <label for="correoElectronico">Correo Electrónico:</label><br>
+      <input type="email" id="correoElectronico" name="correoElectronico" required><br><br>
+      
+      <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+      <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+      
+      <label for="detalleUsuario">Detalle del Usuario:</label><br>
+      <textarea id="detalleUsuario" name="detalleUsuario" rows="4" required></textarea><br><br>
+      
+      <input type="submit" value="Enviar" class="cta-button">
+    </form>
+  </div>
+  
+  <div class="footer">
+    <p>Club de Fans del Barcelona FC &copy; 2023. </p>
+  </div>
+</body>
+</html>
